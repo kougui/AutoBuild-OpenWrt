@@ -123,7 +123,7 @@ jobs:
       working-directory: ./openwrt
       run: |
         cd package/base-files/files/etc
-        sudu rm banner
+        sudo rm banner
         wget https://raw.githubusercontent.com/kougui/AutoBuild-OpenWrt/master/banner
 
     - name: 删除冗余文件
